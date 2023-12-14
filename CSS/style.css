@@ -1,3 +1,15 @@
+h1{
+font-weight: 1200;
+text-align: center;
+font-size: 300px;
+}
+
+h2 {
+font-weight: 800;
+text-align: center;
+font-size: 36px;
+}
+
 hr {
 margin: auto;
 width: 40%;
@@ -21,11 +33,7 @@ font-size: 24px;
   to {left: 300px;}
 }
 
-h2 {
-font-weight: 800;
-text-align: center;
-font-size: 36px;
-}
+
 
 body {
   margin: 0;
