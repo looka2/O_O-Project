@@ -3,6 +3,26 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.cards {
+  max-width: 100%px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+height: 100%
+width: 100%
+}
+
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
+
 
 h1{
 font-weight: 1200;
@@ -27,22 +47,10 @@ text-align : center;
 
 
 h3 {
-text-align: center;
 font-size: 24px;
 
 }
-inf {    /* Image Location */
-          background-image: url("../IMG/INFO-Jip.png");
 
-          /* Background image is centered vertically and horizontally at all times */
-          background-position: center center;
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: cover;
-          background-color: #464646;
-          /* Font Colour */
-          color:white;
-      }
 
 
 @keyframes mymove {
@@ -57,7 +65,7 @@ inf {    /* Image Location */
 #div1 {animation-timing-function: ease;}
      img {
   border-radius: 10px;
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
 }
     .text {
