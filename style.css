@@ -2,18 +2,28 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+.btn-xl {
+width: 100px;
+height: 100px;
+}
 
 .cards {
-  max-width: 100%px;
+  max-width: 100%;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
 }
 
-.card {
-height: 100%
-width: 100%
+.card img {
+height: 100%;
+width: 100%;
 }
+
+.img1 {
+object-fit: cover;
+}
+
+
 
 @media (min-width: 600px) {
   .cards { grid-template-columns: repeat(2, 1fr); }
