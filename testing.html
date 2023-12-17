@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:12px xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <!-- Google Fonts Roboto -->
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <link href="style.css" rel="stylesheet">
+    <link href="CSS/menubar.css" rel="stylesheet">
+    <!-- MDB -->
+    <link rel="stylesheet" href="CSS/mdb.min.css" />
+    <link rel="icon" type="image/png" href="IMG/testing.jpg">
+    <script src="https://kit.fontawesome.com/4b0bb67fb1.js" crossorigin="anonymous"></script>
+    <title>Jip Gradener Muziek</title>
+
+
+
+
+
+    <script>
+$(document).ready(function(){
+    $('a[data-bs-toggle="tab"]').on("shown.bs.tab", function(e){
+        var activeTab = $(e.target).text(); // Get the name of active tab
+        var previousTab = $(e.relatedTarget).text(); // Get the name of previous active tab
+        $(".active-tab span").html(activeTab);
+        $(".previous-tab span").html(previousTab);
+    });
+});
+</script>
+
+
+</head>
+<body>
+
+<div class="color">
+    <nav class="navbar navbar-expand-lg fixed-top bg-black navbar-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="color: white;"><img
+                    id="logo"
+                    src="IMG/testing.jpg"
+                    alt="Placeholder logo"
+                    draggable="false"
+                    height="60px"
+                    width="60px"
+                    style="color: white;"
+            />Muziek van Jip Gradener</a>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    style="color: white;"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#over-mij" style="color: white;">Over Mij</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#Mijn-muziek" style="color: white;">Mijn Muziek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#contact" style="color: white;">Contact opnemen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link mx-2" style="color: white;">#</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="text">
+        <!-- Heading -->
+        <div class="p-5 bg-body-tertiary mb-4" style="padding-top: 0px;padding-left: 12px;margin-top: 100px;">
+            <h1 style="text-align: left; weight: 100px;">Jip Gradener</h1>
+            <h3 style="text-align: left;">Muziek en Optredens</h3>
+            <!-- Breadcrumb -->
+            <nav class="d-flex">
+                <h6 class="mb-0">
+              <a name="over-mij"></a>
+                    <a href="index.html" class="text-reset">Home</a>
+                    <span>/</span>
+                    <a href="testing.html" class="text-reset"><u>Testing</u></a>
+                </h6>
+            </nav>
+            <!-- Breadcrumb -->
+        </div>
+        <!-- Heading -->
+
+    </div>
+    <div style="padding-left: 48px; padding-right: 48px;">
+
+
+            <div class="cards">
+
+            <div class="card">
+                <p>
+                <h2>Bio</h2>
+                Jip Gradener is een producer, muzikant en singer-songwriter<br>
+                uit Utrecht, Nederland. Zijn liefde voor het bespelen van de<br>
+                gitaar ontstond op jonge leeftijd, geïnspireerd door<br>
+                gitaarvirtuozen zoals Frusciante en Hendrix. Jip heeft zowel<br>
+                een nuchtere als een spirituele kijk op het leven, wat de<br>
+                basis vormt voor zijn creativiteit.<br>
+                Sinds 4 jaar heeft Jip alle Utrechtse podia bezocht als gitarist<br>
+                van zijn band Picknick Banter, waarvan de debuutsingle<br>
+                'platform 11' op 3FM is gedraaid. De band kreeg ook de kans<br>
+                om in 2021 een EP op te nemen in het Patronaat als<br>
+                onderdeel van een talentactie. Om al zijn creativiteit tot<br>
+                uiting te brengen, is Jip een jaar geleden gestart met zijn<br>
+                soloproject. Met optredens in Teatro en De Helling is hij<br>
+                succesvol van start gegaan. Nu heeft hij plannen om zijn<br>
+                Nederlandstalige project zorgvuldig in de markt te<br>
+                positioneren.<br>
+                <h3>Highlights</h3>
+                • Het opnemen en mixen van zijn Joip EP<br>
+                • Optreden in o.a. Ekko en de Helling<br>
+                • Geselecteerd in talent-actie<br>
+                <h3>Expertises</h3>
+                • Instrumentalist<br>
+                • Produceren, opnemen en mixen <br>
+                • Songwriting <br>
+                </p>
+            </div>
+            <div class="card">
+                <img class="img1" src="IMG/INFO-Jip.png" alt="Jip" >
+            </div>
+                <div class="card">
+                <img class="img1" src="IMG/grachtjip.jpg" alt="Jip" >
+            </div>
+            <div class="card">
+                <img class="img1" src="IMG/conjip.JPG" alt="Jip" >
+            </div>
+            <div class="card">
+            <a name="contact"></a>
+              <script type="text/javascript" src="https://form.jotform.com/jsform/233502681912049"></script>
+              
+            </div>
+            <div class="card">
+                <ul id="myTab" class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#social" class="nav-link active" data-bs-toggle="tab"> Mijn Socials</a>
+            </li>
+              <li class="nav-item">
+            <a href="#muziek" class="nav-link" data-bs-toggle="tab">Mijn Muziek</a>
+        </li>
+              </ul>
+
+            <div class="media" style="display: flex; align-items: center; justify-content: center;">
+            <div class="tab-content">
+        <div class="tab-pane fade show active" id="social">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <a class="btn text-white btn-lg btn-floating" data-mdb-ripple-init style="background-color: #ac2bac; width: 200px; height: 200px; display: flex; align-items: center; justify-content: center;" href="https://www.instagram.com/jip.gradener/" role="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="170" width="170" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </a>
+                  <br>
+                  <br>
+                <a class="btn text-white btn-lg btn-floating" data-mdb-ripple-init style="background-color: #1db954; width: 200px; height: 200px; display: flex; align-items: center; justify-content: center;" href="https://open.spotify.com/artist/63OIYEDjvWTbkPGWskwYw0?si=bbj8PGdQSlW9DTYSutdVnw" role="button" >
+                    <svg xmlns="http://www.w3.org/2000/svg" height="170" width="170" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"/></svg>
+                </a>
+        </div>
+              <div class="tab-pane fade" id="muziek">
+                  <div class="media" style="display: flex; align-items: center; justify-content: center;">
+                  <p>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/63OIYEDjvWTbkPGWskwYw0?utm_source=generator&theme=white" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </p>
+                  </div>
+              </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    <!-- MDB -->
+    <script type="text/javascript" src="JS/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript">
+        import { Tab, initMDB } from "mdb-ui-kit";
+        initMDB({ Tab });
+        </script>
+</body>
+</html>
