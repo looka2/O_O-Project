@@ -1,8 +1,0 @@
-/* CSS used here will be applied after bootstrap.css */
-.navbar-collapse {
-  text-align:center;
-  }
-.navbar-nav {
-    display:inline-block;
-    float:none;
-  }

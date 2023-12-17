@@ -1,3 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn-xl {
+width: 100px;
+height: 100px;
+}
+
+.cards {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.card img {
+height: 100%;
+width: 100%;
+}
+
+.img1 {
+object-fit: cover;
+}
+
+
+
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+
+h1{
+font-weight: 1200;
+text-align: center;
+font-size: 300px;
+}
+
+h2 {
+font-weight: 800;
+font-size: 36px;
+}
+
 hr {
 margin: auto;
 width: 40%;
@@ -5,15 +52,15 @@ width: 40%;
 
 
 h4 {
-text-align: center;
+text-align : center;
 }
 
 
 h3 {
-text-align: center;
 font-size: 24px;
 
 }
+
 
 
 @keyframes mymove {
@@ -21,22 +68,14 @@ font-size: 24px;
   to {left: 300px;}
 }
 
-h2 {
-font-weight: 800;
-text-align: center;
-font-size: 36px;
-}
 
-body {
-  background-color: #FBFBFB;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+
+
 
 #div1 {animation-timing-function: ease;}
      img {
   border-radius: 10px;
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
 }
     .text {
