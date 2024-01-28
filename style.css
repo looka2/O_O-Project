@@ -1,6 +1,7 @@
+@font-face { font-family: Ubuntu; src: url('Fonts/Ubuntu/Ubuntu/Ubuntu-Regular.ttf'); }
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .btn-xl {
 width: 100px;
