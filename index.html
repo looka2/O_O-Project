@@ -2,11 +2,185 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:12px xmlns="http://www.w3.org/1999/html"
       xmlns="http://www.w3.org/1999/html">
 <head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+      <script>
+      window.onload = function() {
+      var recaptcha = document.forms["fcf-form-id"]["g-recaptcha-response"];
+      recaptcha.required = true;
+      recaptcha.oninvalid = function(e) {
+      // do something
+      alert("Please complete the captcha");
+      }
+      }
+      </script>
 <style>
 .c3 {
   font-family: "Times New Roman", Times, serif;
 
 
+}
+
+
+
+#fcf-form {
+    display:block;
+}
+
+.fcf-body {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    padding: 30px;
+    padding-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    max-width: 100%;
+}
+
+.fcf-form-group {
+    margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.fcf-form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fcf-form-control:focus {
+    border: 1px solid #313131;
+}
+
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
+    height: auto;
+}
+
+textarea.fcf-form-control {
+    font-family: -apple-system, Arial, sans-serif;
+    height: auto;
+}
+
+label.fcf-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.fcf-credit {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #545b62;
+}
+
+.fcf-credit a {
+    color: #545b62;
+    text-decoration: underline;
+}
+
+.fcf-credit a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.fcf-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fcf-btn {
+        transition: none;
+    }
+}
+
+.fcf-btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.fcf-btn:focus, .fcf-btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fcf-btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.fcf-btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.fcf-btn-block {
+    display: block;
+    width: 100%;
+}
+
+.fcf-btn-block+.fcf-btn-block {
+    margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+    width: 100%;
 }
 </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -177,112 +351,51 @@
           </li>
         </ul>
         <div id="contact"></div>
-        <div class="media" style="display: flex; align-items: center; justify-content: center; padding: 0px;">
+        <div class="media" style="display: flex; align-items: center; justify-content: center; padding: 15px;">
           <div class="tab-content" style="width: 100%;">
             <div class="tab-pane fade show active" id="form">
+<br>
+<br>
+<h3>Contact Opnemen?</h3>
+     <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
 
-    <iframe
-      id="JotFormIFrame-233502681912049"
-      title="Contact Opnemen?"
-      onload="window.parent.scrollTo(0,0)"
-      allowtransparency="true"
-      allowfullscreen="true"
-      allow="geolocation; microphone; camera"
-      src="https://form.jotform.com/233502681912049"
-      frameborder="0"
-      style="min-width:100%;max-width:100%;height:539px;border:none;"
-      scrolling="no"
-    >
-    </iframe>
-    <script type="text/javascript">
-    var ifr = document.getElementById("JotFormIFrame-233502681912049");
-    if (ifr) {
-      var src = ifr.src;
-      var iframeParams = [];
-      if (window.location.href && window.location.href.indexOf("?") > -1) {
-        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
-      }
-      if (src && src.indexOf("?") > -1) {
-        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-        src = src.substr(0, src.indexOf("?"))
-      }
-      iframeParams.push("isIframeEmbed=1");
-      ifr.src = src + "?" + iframeParams.join('&');
-    }
-    window.handleIFrameMessage = function(e) {
-      if (typeof e.data === 'object') { return; }
-      var args = e.data.split(":");
-      if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
-      if (!iframe) { return; }
-      switch (args[0]) {
-        case "scrollIntoView":
-          iframe.scrollIntoView();
-          break;
-        case "setHeight":
-          iframe.style.height = args[1] + "px";
-          if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
-            iframe.style.minHeight = args[1] + "px";
-          }
-          break;
-        case "collapseErrorPage":
-          if (iframe.clientHeight > window.innerHeight) {
-            iframe.style.height = window.innerHeight + "px";
-          }
-          break;
-        case "reloadPage":
-          window.location.reload();
-          break;
-        case "loadScript":
-          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
-          var src = args[1];
-          if (args.length > 3) {
-              src = args[1] + ':' + args[2];
-          }
-          var script = document.createElement('script');
-          script.src = src;
-          script.type = 'text/javascript';
-          document.body.appendChild(script);
-          break;
-        case "exitFullscreen":
-          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
-          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
-          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
-          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
-          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
-          break;
-      }
-      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
-        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
-      }
-    };
-    window.isPermitted = function(originUrl, whitelisted_domains) {
-      var url = document.createElement('a');
-      url.href = originUrl;
-      var hostname = url.hostname;
-      var result = false;
-      if( typeof hostname !== 'undefined' ) {
-        whitelisted_domains.forEach(function(element) {
-            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
-                result = true;
-            }
-        });
-        return result;
-      }
-    };
-    if (window.addEventListener) {
-      window.addEventListener("message", handleIFrameMessage, false);
-    } else if (window.attachEvent) {
-      window.attachEvent("onmessage", handleIFrameMessage);
-    }
-    </script>
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">U Naam</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">U Email Adres</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">U Bericht</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+       <div class="g-recaptcha"
+      data-callback="capcha_filled"
+      data-expired-callback="capcha_expired"
+      data-sitekey="6LcA8G4pAAAAAKPd_7mGuzOjYUbtt39JQgE9pwZ-"></div><br>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+
+
+    </form>
 
             </div>
             <div class="tab-pane fade" id="insta">
             <div style="dislpay: text-align:center;display:block; ">
             <br>
-              <br>
               <br>
               <br>
               <br>
@@ -328,17 +441,10 @@
         </ul>
         <div id="socials"></div>
         <div class="media" style="display: flex; align-items: center; justify-content: center;">
-          <div class="tab-content">
+          <div class="tab-content" style="width: 100%;">
             <div class="tab-pane fade show active" id="music">
-                  <p>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/63OIYEDjvWTbkPGWskwYw0?utm_source=generator&theme=white" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </p>
+            <br>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/63OIYEDjvWTbkPGWskwYw0?utm_source=generator&theme=white" width="100%" height="700px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
             <div class="tab-pane fade" id="concerten" style="position: relative;">
 
@@ -372,6 +478,18 @@
       </div>
     </div>
   </div>
+  <br>
+
+
+  ###Footer
+<div style="background-color: black; height: 75px; color: white;">
+<h1>Werkt dit?</h1>
+
+
+
+
+</div>
+###End Footer
 
 </div>
 </font>
