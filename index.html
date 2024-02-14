@@ -31,175 +31,8 @@
 
 }
 
-
-
-#fcf-form {
-    display:block;
-}
-
-.fcf-body {
-    margin: 0;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-    padding: 30px;
-    padding-bottom: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    max-width: 100%;
-}
-
-.fcf-form-group {
-    margin-bottom: 1rem;
-}
-
-.fcf-input-group {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    width: 100%;
-}
-
-.fcf-form-control {
-    display: block;
-    width: 100%;
-    height: calc(1.5em + 0.75rem + 2px);
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    outline: none;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.fcf-form-control:focus {
-    border: 1px solid #313131;
-}
-
-select.fcf-form-control[size], select.fcf-form-control[multiple] {
-    height: auto;
-}
-
-textarea.fcf-form-control {
-    font-family: -apple-system, Arial, sans-serif;
-    height: auto;
-}
-
-label.fcf-label {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-}
-
-.fcf-credit {
-    padding-top: 10px;
-    font-size: 0.9rem;
-    color: #545b62;
-}
-
-.fcf-credit a {
-    color: #545b62;
-    text-decoration: underline;
-}
-
-.fcf-credit a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-.fcf-btn {
-    display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .fcf-btn {
-        transition: none;
-    }
-}
-
-.fcf-btn:hover {
-    color: #212529;
-    text-decoration: none;
-}
-
-.fcf-btn:focus, .fcf-btn.focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
-.fcf-btn-primary {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.fcf-btn-primary:hover {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
-}
-
-.fcf-btn-primary:focus, .fcf-btn-primary.focus {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
-}
-
-.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
-    padding: 0.5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: 0.3rem;
-}
-
-.fcf-btn-block {
-    display: block;
-    width: 100%;
-}
-
-.fcf-btn-block+.fcf-btn-block {
-    margin-top: 0.5rem;
-}
-
-input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
-    width: 100%;
-}
-
-
-.linklist {
-    width: 33%;
-    display: inline-block;
-}
 </style>
+  <link href="CSS/form.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -262,13 +95,12 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
-<font face="Ubuntu">
 <div class="c3" syle="font-family: "Lucida Console", "Courier New", monospace;">
   <nav class="navbar navbar-expand-lg fixed-top bg-black navbar-black">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html" style="color: white;"><img
               id="logo"
-              src="IMG/testing.jpg"
+              src="IMG/logo.webp"
               alt="Placeholder logo"
               draggable="false"
               height="60px"
@@ -316,7 +148,9 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
 
     <div class="cards">
-
+      <div class="card">
+        <img class="img1" src="IMG/muur.webp" alt="Jip" >
+      </div>
       <div class="card" style="padding: 12px;">
         <h2>Over Mij</h2>
         <p>
@@ -347,13 +181,10 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         </p>
       </div>
       <div class="card">
-        <img class="img1" src="IMG/INFO-Jip.png" alt="Jip" >
+        <img class="img1" src="IMG/boom.webp" alt="Jip" >
       </div>
       <div class="card">
-        <img class="img1" src="IMG/grachtjip.jpg" alt="Jip" >
-      </div>
-      <div class="card">
-        <img class="img1" src="IMG/conc22.jpeg" alt="Jip" >
+        <img class="img1" src="IMG/text.webp" alt="Jip" >
       </div>
       <div class="card">
 
@@ -499,14 +330,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     </div>
   </div>
   <br>
-
-
-
-
-
-
-
-
 <!-- Footer -->
 <footer class="bg-dark text-center text-white">
   <!-- Grid container -->
@@ -592,7 +415,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 <!-- Footer -->
 
 </div>
-</font>
   <!-- MDB -->
     <script type="text/javascript" src="JS/mdb.min.js"></script>
     <!-- Custom scripts -->
