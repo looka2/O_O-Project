@@ -13,6 +13,17 @@
       }
       }
       </script>
+
+      <script>
+      window.onload = function() {
+      var recaptcha = document.forms["fcf-form-id"]["privacy"];
+      recaptcha.required = true;
+      recaptcha.oninvalid = function(e) {
+      // do something
+      alert("Please accept the privacy policy");
+      }
+      }
+      </script>
 <style>
 .c3 {
   font-family: "Times New Roman", Times, serif;
@@ -181,6 +192,12 @@ label.fcf-label {
 
 input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
     width: 100%;
+}
+
+
+.linklist {
+    width: 33%;
+    display: inline-block;
 }
 </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -383,9 +400,12 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
       data-callback="capcha_filled"
       data-expired-callback="capcha_expired"
       data-sitekey="6LcA8G4pAAAAAKPd_7mGuzOjYUbtt39JQgE9pwZ-"></div><br>
-
+      <div class="privacy">
+        <input type="checkbox" id="privacy" name="privacy" value="privacy">
+        <label for="privacy" required> I Accept the <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a></label><br>
+        </div>
         <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+            <br><button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
         </div>
 
 
@@ -464,8 +484,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
               </ul>
               <h5 class="card-title">Vorige Optredens</h5>
               <ul class="list-group list-group-light list-group-small">
-              <li class="list-group-item px-4"><strong>4/02/2024</strong> Anjelierstraat 24 - Utrecht</li>
-              <li class="list-group-item px-4">N/A</li>
+              <li class="list-group-item px-4"><strong>04-02-2024</strong> Anjelierstraat 24 - Utrecht</li>
+              <li class="list-group-item px-4"><strong>28-11-2023</strong>  De Helling - Open over</li>
               <li class="list-group-item px-4">N/A</li>
               </ul>
               </div>
@@ -481,14 +501,95 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   <br>
 
 
-<div style="background-color: black; height: 75px; color: white;">
-<h3>mijn favorite voetbalclub: <a href="https://www.sparta-rotterdam.nl" target="_blank" rel="noopener noreferrer">Sparta Rotterdam</a> <br> een van mijn favorite artiesten: <a href="https://en.wikipedia.org/wiki/Frank_Zappa" target="_blank" rel="noopener noreferrer"> Frank Zappa </a></h3>
 
 
 
 
 
-</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+
+
+
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Jip Gradener</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="mailto:Gradenerjip@gmail.com" class="text-white">Gradenerjip@gmail.com</a>
+            </li>
+            <li>
+              <a href="tel:+310613626126" class="text-white">+31 06 13626126</a>
+            </li>
+
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="privacy.html" class="text-white">Privacy statement</a>
+            </li>
+
+
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Info</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Content</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#over-mij" class="text-white">Over Mij</a>
+            </li>
+            <li>
+              <a href="#socials" class="text-white">Mijn Muziek</a>
+            </li>
+            <li>
+              <a href="#contact" class="text-white">Contact Opnemen</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+
+  </div>
+  <!-- Grid container -->
+
+</footer>
+<!-- Footer -->
 
 </div>
 </font>
