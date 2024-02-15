@@ -24,15 +24,27 @@
       }
       }
       </script>
+        <link href="CSS/form.css" rel="stylesheet">
 <style>
 .c3 {
   font-family: "Times New Roman", Times, serif;
 
 
 }
+.card picture {
+height: 100%;
+width: 100%;
+}
 
+.card img {
+height: 100%;
+width: 100%;
+}
+
+.img1 {
+object-fit: cover;
+}
 </style>
-  <link href="CSS/form.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -49,7 +61,7 @@
   <link href="CSS/menubar.css" rel="stylesheet">
   <!-- MDB -->
   <link rel="stylesheet" href="CSS/mdb.min.css" />
-  <link rel="icon" type="image/png" href="IMG/logo.webp">
+  <link rel="icon" type="image/png" href="logo.webp">
   <script src="https://kit.fontawesome.com/4b0bb67fb1.js" crossorigin="anonymous"></script>
 
   <title>Jip Gradener</title>
@@ -75,15 +87,7 @@
 <div class="c3" syle="font-family: "Lucida Console", "Courier New", monospace;">
   <nav class="navbar navbar-expand-lg fixed-top bg-black navbar-black">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html" style="color: white;"><img
-              id="logo"
-              src="IMG/logo.webp"
-              alt="Placeholder logo"
-              draggable="false"
-              height="60px"
-              width="60px"
-              style="color: white;"
-      />Jip Gradener</a>
+      <a class="navbar-brand" href="index.html" style="color: white;"><img id="logo" src="logo.webp" height="55px" width="55px" alt="logo">Jip Gradener</a>
       <button
               class="navbar-toggler"
               type="button"
@@ -126,7 +130,11 @@
 
     <div class="cards">
       <div class="card">
-        <img class="img1" src="IMG/muur.webp" alt="Jip" >
+      <picture>
+        <source srcset="IMG/muur-klein.webp" media="(max-width: 490px)">
+        <source srcset="IMG/muur.webp">
+        <img class="img1" src="IMG/muur.webp" alt="jip">
+      </picture>
       </div>
       <div class="card" style="padding: 12px;">
         <h2>Over Mij</h2>
@@ -158,10 +166,18 @@
         </p>
       </div>
       <div class="card">
-        <img class="img1" src="IMG/boom.webp" alt="Jip" >
+      <picture>
+        <source srcset="IMG/boom-klein.webp" media="(max-width: 490px)">
+        <source srcset="IMG/boom.webp">
+        <img class="img1" src="IMG/boom.webp" alt="jip">
+      </picture>
       </div>
       <div class="card">
-        <img class="img1" src="IMG/text.webp" alt="Jip" >
+      <picture>
+        <source srcset="IMG/text-klein.webp" media="(max-width: 490px)">
+        <source srcset="IMG/text.webp">
+        <img class="img1" src="IMG/text.webp" alt="jip">
+      </picture>
       </div>
       <div class="card">
 
@@ -261,7 +277,7 @@
       <div class="card">
         <ul id="myTab" class="nav nav-tabs">
           <li class="nav-item">
-            <a href="#music" class="nav-link active" data-bs-toggle="tab"> Mijn Muziek</a>
+            <a href="#music" class="nav-link active" data-bs-toggle="tab">Mijn Muziek</a>
           </li>
           <li class="nav-item">
             <a href="#concerten" class="nav-link" data-bs-toggle="tab">Mijn Concerten</a>
