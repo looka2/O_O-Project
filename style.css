@@ -2,6 +2,13 @@
 body {
   margin: 0;
 }
+
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 .btn-xl {
 width: 100px;
 height: 100px;
